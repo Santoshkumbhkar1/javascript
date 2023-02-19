@@ -34,23 +34,51 @@ logger();
 
 
 
-function cutpieces(fruits)
-{
-    return fruits*4;
+// function cutpieces(fruits)
+// {
+//     return fruits*4;
+// }
+
+
+// function fruitprocessors( apple, mango){
+//     const applepiece  = cutpieces(apple);
+//     const mangopieces = cutpieces(mango);
+//     const juise = `The juise of ${applepiece} apples and ${mangopieces} mango `;
+
+//     return juise;
+// }
+// const result = fruitprocessors(5,3);
+// console.log(result);
+
+// const result2 = fruitprocessors(6 ,7);
+// console.log(result2);
+
+
+
+const calcaverage=(m1, m2, m3)=>{
+
+    const navg =( m1+m2+m3)/3;
+    return navg;
 }
 
-function fruitprocessors( apple ,mango){
-    const applepiece  = cutpieces(apple);
-    const mangopieces = cutpieces(mango);
-    const juise = `The juise of ${applepiece} apples and ${mangopieces} mango `;
+const a1 = calcaverage(44, 23 ,71);
+const a2   = calcaverage(65 ,54, 49);
 
-    return juise;
+const checkwinner = (a1, a2)=>{
+
+    if(a1>=2*a2){
+        console.log(`"Dolphin win (${a1} vs ${a2} )"`);
+    }
+    else if(a2>=2*a1){
+        console.log(`"kolas win (${a2} vs ${a1} )"`);
+    }
+    else{
+        console.log(`None of them won the match ${a1} vs ${a2}`);
+    }  
 }
-const result = fruitprocessors(5,3);
-console.log(result);
 
-const result2 = fruitprocessors(6 ,7);
-console.log(result2);
+checkwinner(a1,a2);
+
 
 
 
