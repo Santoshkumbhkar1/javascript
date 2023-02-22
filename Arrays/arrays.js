@@ -139,10 +139,40 @@ const John={
 console.log(Mark.BMI , John.BMI);
 
 
+//  solve the below age problem and store in array
+const age =[];
+const years =[2001, 2002, 1999,2000,1998];
+
+for(let i = 0; i<years.length; i++){
+    age[i]= 2023-years[i];
+}
+
+console.log(age);
+
+// continue and break
+console.log('Only string value')
+for(let i = 0; i<obj.length;i++){
+   console.log('hello')
+   if(typeof obj[i] !=='string') continue;
+   console.log(obj[i] ,typeof obj[i]);
+}
+
+console.log('hello');
 
 
+// while loop in javascript
+
+for(let rep=0; rep<=10; rep++){
+
+    console.log(`Lifting weights repetition ${rep}`);
+}
 
 
+let rep =0; 
 
-
+while(rep<=10){
+    console.log(` This is from while loop 😂 Lifting weights repetition ${rep}`);
+    rep++;
+    
+}
 
